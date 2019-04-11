@@ -1,0 +1,107 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(38, 35, 211);
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+
+
+}
+
+.bild_header{
+    background-color: lightblue;
+    width: 100%;
+    height: 270px;
+
+}
+
+ul{
+    margin: 15px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.main{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    height: 100vh;
+    
+}
+
+.text{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    padding-top: 50px;
+    /* background-color: lightskyblue; */
+}
+
+.bild{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-style: solid;
+
+}
+
+i.material-icons{
+    font-size: 50px;
+    
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(81, 143, 255);
+}
+
+.menu{
+    margin-left: 10px;
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    top: 0;
+    left: -100%;
+    transition: 0.7s;
+    position: fixed;
+
+
+}
+
+.activate{
+    left: 0;
+}
+
+.sok{
+    margin-right: 10px;
+}
+
+.kryss{
+    margin-left: 10px;
+}
+
+
+.logo{
+    background-color: black;
+    width: 70px;
+    height: 50px;
+    margin: auto;
+    
+}
