@@ -17,7 +17,7 @@ header{
 
 .bild_header{
     background-color: lightblue;
-    width: 100%;
+    /* width: 100%; */
     height: 270px;
 
 
@@ -42,6 +42,13 @@ a{
     padding-bottom: 70px;
     /* height: 100vh; */
     
+}
+
+.main_company{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 70px;
 }
 
 .text{
@@ -82,7 +89,8 @@ i.material-icons{
 .footer{
     width: 100%;
     height: 200px;
-    background-color: rgb(81, 143, 255);
+    background-color: white;
+    border-style: solid;
 }
 
 .menu{
@@ -111,6 +119,10 @@ i.material-icons{
 }
 
 .sok_icon{
+    visibility: hidden;
+}
+
+#sok_icon{
     visibility: hidden;
 }
 
@@ -150,11 +162,13 @@ h2{
     header{
         height: 150px;
         position: unset;
+        background-image: url(../../psd/header_webb.1264x150.jpg)
     }
     
     .bild_header{
-        background-color: lightblue;
-        width: 100%;
+        background-color: white;
+        border-style: solid;
+        /* width: 100%; */
         height: 60px; 
         left: 0;
         justify-content: center;
@@ -172,22 +186,74 @@ h2{
         
     }
 
-    .main{
-        grid-template-columns: 300px auto;
-        grid-template-rows: 400px auto;
-        grid-template-areas:
-        "text1 bild"
-        "text1 bild"
+    p{
+        font-size: 20px;
     }
+
+    .main_company{
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 100px auto 50px auto 100px;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        ". text_comp1 . bild_comp1 ."
+        ". bild_comp2 . text_comp2 ."
+        
+    }
+
+    .main{
+        height: 450px;
+        display: grid;
+        grid-template-columns: 100px auto 50px auto 100px;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        /* ". . . . ." */
+        ". text1 . bild ."
+        ". text1 . bild ."
+    }
+
+    #text_comp1{
+        grid-area: text_comp1;
+        width: 250px;
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    #bild1{
+        grid-area: bild_comp1;
+    }
+
+    #text_comp2{
+        grid-area: text_comp2;
+        width: 250px;
+        padding: 0;
+        margin-top: 80px;
+
+    }
+
+    #bild2{
+        grid-area: bild_comp2;
+        
+    }
+
+
 
     .text{
         grid-area: text1;
-        /* width: 300px;
-        height: 400px; */
+        width: 250px;
+        padding: 0;
+        /* height: 400px; */
 
     }
 
+    i#pil_icon.material-icons{
+        margin-bottom: 30px;
+    }
+
     .bild{
+        width: 230px;
+        height: 300px; 
+        margin-top: 100px;
         grid-area: bild;
         
     }
@@ -210,22 +276,92 @@ h2{
     
     
     .logo{
-        width: 130px;
-        height: 90px;
+        width: 150px;
+        height: 100px;
         margin-right: 35px;
         
     }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 187px 300px auto 200px;
+        grid-template-rows: 50px auto;
+        grid-template-areas: 
+        ". . . . ."
+        ". logo . text_fo ."
+    }
     
+    .logo_footer{
+        width: 170px;
+        height: 130px;
+        background-color: black;
+        grid-area: logo;
+        /* margin-right: 35px; */
+        
+    }
+
+    .text_footer{
+        width: 300px;
+        height: 130px;
+        background-color: blue;
+        grid-area: text_fo;
+    }
 
     
     .bild_header li{
         visibility: visible;
     }
+
+    
     
 
     .rubrik{
         text-align: center;
     }
+
+    .dropmenu{
+        height: 70px;
+        width: 70%;
+        background-color: gray;
+        margin: auto;
+        left: -100%;
+
+
+    }
+
+    .activate_about{
+        left: 0;
+    }
+
+    /* .dropdown_about{
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown_text{
+        display: none;
+        position: absolute;
+        background-color: lightgray;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdown_text a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown_text a:hover{
+        background-color: green;
+    }
+
+    .drapdown_about:hover.dropdown_text{
+        display: block;
+    } */
+
+
 
     
 }
