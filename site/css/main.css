@@ -251,8 +251,8 @@ h2{
     .nav_about{
         background-color: lightgray;
         grid-area: nav;
-        /* left: -100%; */
-        position: absolute;
+        position: relative;
+        left: -2000px;
         
         
     }
@@ -265,13 +265,10 @@ h2{
         height: 60px;
         left: 350px;
         padding-bottom: 5px;
-        /* justify-content: center;
-        justify-items: center; */
         text-align: center;
         position: absolute;
         overflow: hidden;
-    
-        /* left: -100%; */
+        left: -2000px;
     }
 
     .activate_about{
@@ -354,18 +351,30 @@ h2{
         visibility: visible;
     }
 
-    
-    /* .nav_about li{
+    .nav_about ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
         overflow: hidden;
-        list-style: none;
+        background-color: #333333;
+        /* margin: auto; */
+
+    }
+
+    .nav_about li{
+        float: left;
+        margin: auto;
+    }
+
+    .nav_about li a{
         display: block;
-        padding: 16px 40px 16px 40px;
-        font-size: 30px;
+        text-align: center;
         visibility: visible;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
             
     
-    } */
+    }
 
     .rubrik{
         text-align: center;
