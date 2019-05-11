@@ -329,6 +329,12 @@ h5{
         
     }
 
+    #bild_contact{
+        width: 300px;
+        height: 320px;
+        background-image: url(../../psd/bild_con_300x320.jpg)
+    }
+
     .nav_about{
         background-color: lightgray;
         grid-area: nav;
