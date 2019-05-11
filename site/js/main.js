@@ -4,21 +4,21 @@ function menu (event){
     menu.classList.toggle("activate")
 }
 
+// function about (event){
+//     let menu = document.querySelector(".dropmenu")
+//     menu.classList.toggle("activate_about")
+
+
+// }
+
 function about (event){
-    let menu = document.querySelector(".dropmenu")
-    menu.classList.toggle("activate_about")
 
-
-}
-
-function about (event){
-
-    let about = document.querySelector(".nav_about", ".about_nav")
+    let about = document.querySelector(".nav_about")
     about.classList.toggle("activate_about")
 }
 
-// function about (event){
+function products (event){
 
-//     let about = document.querySelector(".about_nav")
-//     about.classList.toggle("activate_about")
-// }
+    let products = document.querySelector(".nav_products")
+    products.classList.toggle("activate_products")
+}

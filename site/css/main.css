@@ -1,7 +1,6 @@
 body{
-    /* height: 100vh; */
     margin: 0;
-    background-color: rgb(38, 35, 211);
+    background-color: rgb(53, 51, 192);
 }
 
 header{
@@ -17,7 +16,6 @@ header{
 
 .bild_header{
     background-color: lightblue;
-    /* width: 100%; */
     height: 270px;
 
 
@@ -40,11 +38,24 @@ a{
     width: 70%;
     margin: auto;
     padding-bottom: 70px;
-    /* height: 100vh; */
     
 }
 
+.main_contact{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
 .main_company{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.main_history{
     background-color: white;
     width: 70%;
     margin: auto;
@@ -55,7 +66,6 @@ a{
     width: 200px;
     height: 250px;
     margin: auto;
-    padding-top: 40px;
 
 }
 
@@ -64,7 +74,7 @@ a{
     margin: auto;
     padding-top: 40px;
     padding-bottom: 40px;
-    /* background-color: lightskyblue; */
+    
 }
 
 
@@ -72,14 +82,10 @@ a{
     width: 200px;
     height: 200px;
     margin: auto;
-    /* background-color: blue; */
     border-style: solid;
 
 }
 
-/* #bild2{
-    margin-bottom: 40px;
-} */
 
 i.material-icons{
     font-size: 50px;
@@ -90,9 +96,14 @@ i.material-icons{
     width: 100%;
     height: 200px;
     background-color: white;
-    border-style: solid;
+    /* border-style: solid; */
 }
 
+a:hover{
+    font-weight:bold;
+    /* cursor: pointer; */
+    /* background-size: contain; */
+}
 .menu{
     margin-left: 10px;
 }
@@ -156,6 +167,24 @@ h2{
     visibility: hidden;
 }
 
+h5{
+    visibility: hidden;
+}
+
+.nav_products{
+    visibility: hidden;
+}
+
+.nav_products li{
+    visibility: hidden;
+}
+
+.nav_about li{
+    visibility: hidden;
+}
+
+
+
 
 @media only screen and (min-device-width: 1024px){
     
@@ -164,15 +193,26 @@ h2{
         position: unset;
         background-image: url(../../psd/header_webb.1264x150.jpg)
     }
+
+    h2{
+        position: absolute;
+        color: black;
+        font-size: 70px;
+        visibility: visible;
+        text-align: center;
+        margin: 0;
+        left: 270px;
+        top: 20px;
+    }
     
     .bild_header{
         background-color: white;
-        border-style: solid;
-        /* width: 100%; */
+        /* border-style: solid; */
         height: 60px; 
         left: 0;
         justify-content: center;
         display: flex;
+        
         
     }
     
@@ -192,7 +232,6 @@ h2{
     }
 
     h5{
-        
         font-size: 30px;
         margin: auto;
         padding: 0;
@@ -201,25 +240,67 @@ h2{
     }
 
     .main_company{
-        height: 1000px;
+        height: 1200px;
         display: grid;
-        grid-template-columns: 100px auto 50px auto 100px;
-        grid-template-rows: auto auto;
+        border-style: solid;
+        grid-template-columns:  100px auto 50px auto 100px;
+        grid-template-rows: 60px auto auto;
         grid-template-areas: 
+        "nav nav nav nav nav"
         ". text_comp1 . bild_comp1 ."
         ". bild_comp2 . text_comp2 ."
         
     }
 
+    .main_history{
+        /* background-color: white; */
+        height: 800px;
+        display: grid;
+        border-style: solid;
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 60px 500px auto;
+        grid-template-areas: 
+        " nav nav nav"
+        ". text_history ."
+        ". bild_history ."
+
+    }
+
+
+    #text_history{
+        grid-area: text_history;
+    }
+
+    #bild_history{
+        grid-area: bild_history;
+        /* background-color: blue; */
+        border-style: solid;
+        /* width: 300px; */
+    }
+
     .main{
         height: 450px;
         display: grid;
+        border-style: solid;
         grid-template-columns: 100px auto 50px auto 100px;
         grid-template-rows: 60px auto auto;
         grid-template-areas:
         "nav nav nav nav nav"
         ". text1 . bild ."
         ". text1 . bild ."
+    }
+
+    .main_contact{
+        height: 600px;
+        display: grid;
+        border-style: solid;
+        grid-template-columns: 100px auto 50px auto 100px;
+        grid-template-rows: 60px auto;
+        grid-template-areas:
+        "nav nav nav nav nav"
+        ". text1 . bild ."
+        /* ". text1 . bild ." */
+
     }
 
     #text_comp1{
@@ -252,10 +333,12 @@ h2{
         background-color: lightgray;
         grid-area: nav;
         position: relative;
+        border-bottom-style: solid;
         left: -2000px;
         
         
     }
+
     
     
 
@@ -269,6 +352,16 @@ h2{
         position: absolute;
         overflow: hidden;
         left: -2000px;
+    }
+
+    .nav_products{
+        background-color: lightgray;
+        grid-area: nav;
+        visibility: visible;
+        border-bottom-style: solid;
+        position: relative;
+        left: -2000px;
+
     }
 
     .activate_about{
@@ -287,6 +380,8 @@ h2{
 
     i#pil_icon.material-icons{
         margin-bottom: 30px;
+        position: relative;
+        bottom: 10px;
     }
 
     .bild{
@@ -294,6 +389,7 @@ h2{
         height: 300px; 
         margin-top: 100px;
         grid-area: bild;
+        background-image: url(../../psd/test.jpg)
         
     }
     
@@ -311,6 +407,8 @@ h2{
     #sok_icon{
         visibility: visible;
         margin-left: 260px;
+        position: relative;
+        bottom: 10px;
     }
     
     
@@ -318,7 +416,12 @@ h2{
         width: 150px;
         height: 100px;
         margin-right: 35px;
+        /* background-image: url(../../psd/logo.150x100.jpg) */
         
+    }
+
+    h4{
+        margin: 5px;
     }
 
     .footer{
@@ -331,9 +434,10 @@ h2{
     }
     
     .logo_footer{
-        width: 170px;
-        height: 130px;
-        background-color: black;
+        width: 200px;
+        height: 114px;
+        /* background-color: black; */
+        background-image: url(../../psd/logo_footer_200x114.jpg);
         grid-area: logo;
         /* margin-right: 35px; */
         
@@ -342,13 +446,15 @@ h2{
     .text_footer{
         width: 300px;
         height: 130px;
-        background-color: blue;
+        /* background-color: blue; */
         grid-area: text_fo;
     }
 
     
     .bild_header li{
         visibility: visible;
+        position: relative;
+        bottom: 7px;
     }
 
     .nav_about ul{
@@ -363,17 +469,33 @@ h2{
 
     .nav_about li{
         float: left;
-        margin: auto;
+        position: relative;
+        bottom: 7px;
+        left: 220px;
+    }
+
+    .nav_products li{
+        float: left;
+        position: relative;
+        bottom: 7px;
+        left: 140px;
+        /* margin: auto; */
     }
 
     .nav_about li a{
-        display: block;
+        display: inline-block;
         text-align: center;
         visibility: visible;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         
-            
-    
+    }
+
+    .nav_products li a{
+        display: block;
+        text-align: center;
+        visibility: visible;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     }
 
     .rubrik{
@@ -391,6 +513,10 @@ h2{
     }
 
     .activate_about{
+        left: 0;
+    }
+
+    .activate_products{
         left: 0;
     }
 
