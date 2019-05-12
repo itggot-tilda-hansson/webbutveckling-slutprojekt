@@ -4,12 +4,6 @@ function menu (event){
     menu.classList.toggle("activate")
 }
 
-// function about (event){
-//     let menu = document.querySelector(".dropmenu")
-//     menu.classList.toggle("activate_about")
-
-
-// }
 
 function about (event){
 
