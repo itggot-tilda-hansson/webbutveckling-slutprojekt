@@ -15,12 +15,23 @@ header{
 }
 
 .bild_header{
-    background-color: lightblue;
+    background-image: url(../../psd/header_mobil_375x270.jpg);
     height: 270px;
 
 
 }
 
+#bild1{
+    background-image: url(../../psd/bild1_mobil_204x204.jpg)
+}
+
+#bild_contact{
+    background-image: url(../../psd/bild_con_204x204.jpg)
+}
+
+#bild2{
+    background-image: url(../../psd/mobil_bild2_204x204.jpg)
+}
 ul{
     margin: 15px;
     font-size: 30px;
@@ -38,6 +49,7 @@ a{
     width: 70%;
     margin: auto;
     padding-bottom: 70px;
+    border-style: solid;
     
 }
 
@@ -46,6 +58,7 @@ a{
     width: 70%;
     margin: auto;
     padding-bottom: 70px;
+    border-style: solid;
 }
 
 .main_company{
@@ -53,6 +66,7 @@ a{
     width: 70%;
     margin: auto;
     padding-bottom: 70px;
+    border-style: solid;
 }
 
 .main_history{
@@ -60,6 +74,7 @@ a{
     width: 70%;
     margin: auto;
     padding-bottom: 70px;
+    border-top-style: solid;
 }
 
 .text{
@@ -72,9 +87,38 @@ a{
 .text_company{
     width: 200px;
     margin: auto;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     padding-bottom: 40px;
     
+}
+
+.main_contact{
+    /* height: 800px; */
+}
+
+h3{
+    visibility: hidden;
+}
+
+#text_history h3{
+    visibility: visible;
+}
+
+#text_comp2{
+    padding-top: 40px;
+}
+
+#bild_service{
+    background-image: url(../../psd/mobil_bild3_204x204.jpg)
+}
+
+#bild_service2{
+    background-image: url(../../psd/mobil_bild4_204x204.jpg)
+}
+
+.text_history{
+    width: 200px;
+    margin: auto;
 }
 
 
@@ -160,7 +204,11 @@ li{
 }
 
 h2{
-    visibility: hidden;
+    /* visibility: hidden; */
+    font-size: 23px;
+    text-align: center;
+    margin-right: 17px;
+    margin-left: 17px;
 }
 
 .bild_header li{
@@ -169,6 +217,17 @@ h2{
 
 h5{
     visibility: hidden;
+}
+
+h4{
+    margin: 5px;
+    /* text-align: center; */
+}
+
+.text_footer{
+    /* background-color: green; */
+    padding-top: 20px;
+    padding-left: 50px;
 }
 
 .nav_products{
@@ -182,6 +241,8 @@ h5{
 .nav_about li{
     visibility: hidden;
 }
+
+
 
 
 
@@ -395,14 +456,38 @@ h5{
         height: 300px; 
         margin-top: 100px;
         grid-area: bild;
-        background-image: url(../../psd/test.jpg)
+        /* background-image: url(../../psd/test.jpg) */
         
+    }
+
+    #bild1{
+        background-image: url(../../psd/test.jpg)
+    }
+
+    #bild2{
+        background-image: url(../../psd/prop_230x300.jpg)
     }
     
     #ta_bort{
         visibility: hidden;
         
     }
+
+    #bild_history{
+        background-image: url(../../psd/bot_484x240.jpg)
+    }
+
+    #bild_service{
+        background-image: url(../../psd/bild_230x300.jpg);
+        grid-area: bild_comp1;
+    }
+
+    #bild_service2{
+        background-image: url(../../psd/bild_prop_230x300.jpg);
+        grid-area: bild_comp2;
+    }
+
+
     
     #pil_icon{
         visibility: visible;
@@ -524,6 +609,10 @@ h5{
 
     .activate_products{
         left: 0;
+    }
+
+    h3{
+        visibility: visible;
     }
 
     /* .dropdown_about{
