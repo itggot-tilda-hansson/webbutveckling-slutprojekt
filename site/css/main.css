@@ -112,11 +112,12 @@ h3{
     background-image: url(../../psd/mobil_bild4_204x204.jpg)
 }
 
-.text_history{
+
+#text_history{
     width: 200px;
     margin: auto;
+    
 }
-
 
 .bild{
     width: 200px;
@@ -315,7 +316,18 @@ h4{
 
     #text_history{
         grid-area: text_history;
+        
+        
     }
+
+    .text_history p{
+        width: 484px;
+        position: relative;
+        right: 140px;
+        
+    } 
+
+    
 
     #bild_history{
         grid-area: bild_history;
@@ -560,15 +572,6 @@ h4{
         text-align: center;
     }
 
-    .dropmenu{
-        height: 70px;
-        width: 70%;
-        background-color: gray;
-        margin: auto;
-        left: -100%;
-
-
-    }
 
     .activate_about{
         left: 0;
